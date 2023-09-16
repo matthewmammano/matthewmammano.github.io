@@ -1,0 +1,391 @@
+/*
+FONTS:
+  font-family: 'Pragati Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+FUNCTIONS:
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+  35px + (50 - 35) * ((100vw - 375px) / (2000 - 375))
+*/
+
+
+/* VARIABLES ------------------------------------------------------------------------------------------------------------------------- */
+:root {
+  --mainFont: 'Pragati Narrow', sans-serif;
+  --secFont: 'Open Sans Condensed', sans-serif;
+
+  --white: #fff;
+  --black: #000;
+
+  --prop: calc(1vw * 1vh);
+}
+::-moz-selection {
+  background: #31a7da50;
+}
+::selection {
+  background: #31a7da50;
+}
+
+/* STANDARD ------------------------------------------------------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* text-decoration: none; */
+  color: pink; /* CHANGE */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+html, body {
+  width: 100vw;
+  height: 200vh;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: linear-gradient(#282828, black);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-size: 4rem; /* CHANGE */
+}
+button {
+   cursor: pointer !important;
+}
+
+/* MAIN ------------------------------------------------------------------------------------------------------------------------- */
+.page1 {
+  width: 100vw;
+}
+.fullBackground {
+  z-index: -99;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+  .fullBackground svg {
+    min-height: 110vmax;
+    min-width: 110vmax;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+    #Stars {}
+    #starGroup {
+      animation: spin 500s linear infinite;
+      transform-origin: center;
+    }
+
+.logoImg {
+  z-index: 9999;
+  position: fixed;
+  width: 50px;
+  top: 10px;
+  left: 10px;
+}
+.earthContainer {
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+  #AllEarth {
+    z-index: 1000;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 700vh;
+    top: -332vh;
+    left: 50%;
+    animation: thrown 1s linear 1;
+    -moz-animation: thrown 1s linear 1;
+    -webkit-animation: thrown 1s linear 1;
+    animation-play-state: paused;
+  }
+    #AllIslands {
+      animation: orbit 400s linear infinite;
+      -moz-animation: orbit 400s linear infinite;
+      -webkit-animation: orbit 400s linear infinite;
+      transform-origin: 50% 50%;
+    }
+    #AllMainLands {
+      animation: orbit 400s linear infinite;
+      -moz-animation: orbit 400s linear infinite;
+      -webkit-animation: orbit 400s linear infinite;
+      transform-origin: 50% 50%;
+    }
+.MContainerOuter {
+  max-height: 75vh;
+  max-width: 90vw;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  .MContainer {
+    overflow-x: hidden;
+    width: 100%;
+    animation: load 2s linear 0s 1;
+    -moz-animation: load 2s linear 0s 1;
+    -webkit-animation: load 2s linear 0s 1;
+  }
+    .MContainer img {
+      max-height: 75vh;
+      max-width: 90vw;
+    }
+.titleContainer {
+  z-index: 999999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+  .title1 {
+    font-family: var(--mainFont);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0;
+    animation: fadeIn 1s ease 0s 1;
+    -webkit-animation: fadeIn 1s ease 0s 1;
+    -moz-animation: fadeIn 1s ease 0s 1;
+    animation-play-state: paused;
+  }
+  .title2Container {
+    width: 80%;
+    margin: 0 auto;
+  }
+    .title2 {
+      font-family: var(--secFont);
+      color: white;
+      font-weight: 300;
+      text-align: center;
+      line-height: 0;
+      animation: fadeIn 1s ease 0s 1;
+      -webkit-animation: fadeIn 1s ease 0s 1;
+      -moz-animation: fadeIn 1s ease 0s 1;
+      animation-play-state: paused;
+    }
+.socialLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: fixed;
+  transform: translate(-50%, 0%);
+  bottom: 0;
+  left: 50%;
+  padding: 15px 0px;
+  animation: fadeIn 1s ease 0s 1;
+  -webkit-animation: fadeIn 1s ease 0s 1;
+  -moz-animation: fadeIn 1s ease 0s 1;
+  animation-play-state: paused;
+  z-index: 9999999999999999999999;
+}
+  .socialLinks img {
+    width: 35px;
+    margin: 0px 5px;
+  }
+
+
+
+
+
+
+
+.page2 {
+  width: 100vw;
+}
+  .workTitle {
+    font-family: var(--mainFont);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .workContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 25px;
+  }
+    .textyWithIMG {
+      position: relative;
+      height: calc(100vh/6);
+      outline: 8px solid white;
+      outline-offset: -1px;
+    }
+      .texty {
+        filter: opacity(0);
+        color: white;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        z-index: 99;
+        transform: translate(-50%, 0%);
+        left: 50%;
+      }
+      .texty:hover {
+        transition: 1s;
+        filter: opacity(1);
+      }
+        .textyInside {
+          width: 100%;
+          height: 90%;
+        }
+          .texty1, .texty2 {
+            font-family: 'Hind Madurai', sans-serif;
+            color: white;
+            font-weight: 700;
+            width: 100%;
+          }
+          .texty1 {
+            font-size: 2rem;
+          }
+            .texty1 a {
+              font-family: 'Hind Madurai', sans-serif;
+              color: white;
+              font-weight: 700;
+            }
+          .texty2 {
+            font-size: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+            .buttonContainer {
+              padding-top: 15px;
+            }
+              .buttonContainer button {
+                transition: all 0.75s ease-in-out;
+                position: absolute;
+                text-decoration: none;
+                padding: 8px 25px;
+                border: none;
+                border-radius: 50px;
+                color: black;
+                font-family: 'Hind Madurai', sans-serif;
+                font-weight: 400;
+                font-size: 1rem;
+                background-size: 275% auto;
+                background-image: linear-gradient(to right, #1898D8, #3CA50D);
+                z-index: 999;
+              }
+              .buttonContainer button:hover {
+                background-position: right center;
+              }
+      .page2 img {
+        filter: brightness(1);
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .texty:hover + img {
+        transition: 1s;
+        filter: brightness(0.2);
+      }
+
+
+
+
+
+
+
+
+.page3 {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+}
+  .page3 div {
+    text-align: center;
+    margin: auto;
+  }
+  .page3Container {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+  }
+    .t-1, .t-2, .t-3, .t-4 {
+      display: block;
+      position: relative;
+    }
+    #t-1, #t-2, #t-3, #t-4 {
+      color: white;
+    }
+    .t-1 {
+      width: max(15%, 250px);
+      max-width: 90%;
+    }
+      #t-1 {
+        font-family: var(--mainFont);
+        color: white;
+        font-weight: 400;
+        text-align: center;
+
+      }
+    .t-2 {
+      width: max(30%, 350px);
+      max-width: 85%;
+    }
+      #t-2 {
+        font-family: 'Puritan', sans-serif;
+        color: white;
+        font-weight: 400;
+      }
+    .t-3 {
+
+    }
+      #t-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: max(35%, 400px);
+        max-width: 90%;
+      }
+        #t-3 div {
+          margin: 0;
+        }
+          .contactyButton {
+            transition: all 0.75s ease-in-out;
+            text-decoration: none;
+            padding: 8px 25px;
+            border: none;
+            border-radius: 30px;
+            color: black;
+            font-family: 'Hind Madurai', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            background-size: 275% auto;
+            background-image: linear-gradient(to right, #1898D8, #3CA50D);
+            z-index: 999;
+          }
+          .contactyButton:hover {
+            background-position: right center;
+          }
+    .t-4 {
+      width: max(15%, 100px);
+      min-width: 250px;
+    }
+      #t-4 {
+        font-family: 'Puritan', sans-serif;
+        color: white;
+        font-weight: 400;
+      }
+    .contactTitle {
+      width: 80vw;
+      font-family: var(--mainFont);
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      padding: 25px;
+    }

@@ -1,0 +1,66 @@
+@keyframes load {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+@-moz-keyframes load {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+@-webkit-keyframes load {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+
+@keyframes orbit {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(-360deg);}
+}
+@-moz-keyframes orbit {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(-360deg);}
+}
+@-webkit-keyframes orbit {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(-360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotateZ(0deg);}
+	to {transform:rotateZ(360deg);}
+}
+@-moz-keyframes spin {
+  from {transform:rotateZ(0deg);}
+  to {transform:rotateZ(360deg);}
+}
+@-webkit-keyframes spin {
+  from {transform:rotateZ(0deg);}
+	to {transform:rotateZ(360deg);}
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes thrown {
+  0% {top: -350vh;}
+  100% {top: -332vh;}
+}
+@-moz-keyframes thrown {
+  0% {top: -350vh;}
+  100% {top: -332vh;}
+}
+
+@-webkit-keyframes thrown {
+  0% {top: -350vh;}
+  100% {top: -332vh;}
+}
