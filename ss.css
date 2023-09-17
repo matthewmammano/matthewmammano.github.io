@@ -98,6 +98,20 @@ button {
   height: 100vh;
   overflow: hidden;
 }
+  .secondEarthContainer {
+    z-index: 1000000;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: -332vh;
+    left: 50%;
+  }
+    .secondEarthContainer img {
+      width: 700vh;
+      animation: thrown 1s linear 1;
+      -moz-animation: thrown 1s linear 1;
+      -webkit-animation: thrown 1s linear 1;
+      animation-play-state: paused;
+    }
   #AllEarth {
     z-index: 1000;
     position: relative;
