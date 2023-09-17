@@ -71,19 +71,16 @@ button {
   height: 100vh;
   overflow: hidden;
 }
-  .fullBackground svg {
+  .fullBackground img {
     min-height: 110vmax;
     min-width: 110vmax;
     position: fixed;
     transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
+    left: -50%;
+    animation: spin 500s linear infinite;
+    transform-origin: center;
+
   }
-    #Stars {}
-    #starGroup {
-      animation: spin 500s linear infinite;
-      transform-origin: center;
-    }
 
 .logoImg {
   z-index: 9999;
