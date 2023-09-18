@@ -177,6 +177,7 @@ button {
   z-index: 9999999999999999999999;
 }
   .socialLinks img {
+    z-index: 999999999;
     width: 35px;
     margin: 0px 5px;
   }
