@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function commencement() {
     document.getElementsByClassName("title1")[0].style.webkitAnimationPlayState = "running";
     document.getElementsByClassName("title2")[0].style.webkitAnimationPlayState = "running";
-    document.getElementById("AllEarth").style.webkitAnimationPlayState = "running";
     document.getElementsByClassName("socialLinks")[0].style.webkitAnimationPlayState = "running";
   }
 
