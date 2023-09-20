@@ -63,6 +63,7 @@ button {
 /* MAIN ------------------------------------------------------------------------------------------------------------------------- */
 .page1 {
   width: 100vw;
+  height: 100vh;
 }
 .fullBackground {
   z-index: -99;
@@ -91,6 +92,7 @@ button {
   left: 10px;
 }
 .earthContainer {
+  position: absolute;
   z-index: 1000;
   width: 100vw;
   height: 100vh;
