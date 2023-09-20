@@ -40,7 +40,6 @@ FUNCTIONS:
 }
 html, body {
   width: 100vw;
-  height: 200vh;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -54,7 +53,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  overflow-x: hidden;
+  overflow: hidden;
   font-size: 4rem; /* CHANGE */
 }
 button {
