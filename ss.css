@@ -111,6 +111,7 @@ button {
       -moz-animation: thrown 1s linear 1;
       -webkit-animation: thrown 1s linear 1;
       animation-play-state: paused;
+      animation: orbit 700s linear infinite;
     }
 .MContainerOuter {
   max-height: 75vh;
