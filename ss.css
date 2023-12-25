@@ -246,12 +246,13 @@ button {
               font-weight: 700;
             }
           .texty2 {
-            font-size: 1rem;
+            font-size: .8rem;
             display: -webkit-box;
             -webkit-line-clamp: 7;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            font-weight: normal;
           }
             .buttonContainer {
               padding-top: 15px;
