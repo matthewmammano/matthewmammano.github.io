@@ -1,6 +1,6 @@
 @media (max-width: 1800px) {
   .texty2 {
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 21;
   }
 }
 
