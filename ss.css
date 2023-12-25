@@ -77,7 +77,7 @@ button {
     min-width: 110vmax;
     position: fixed;
     transform: translate(-50%, -50%);
-    left: -50%;
+    left: -96%;
     top: -50%;
     animation: spin 500s linear infinite;
     transform-origin: center;
