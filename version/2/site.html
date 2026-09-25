@@ -1,0 +1,181 @@
+<!--
+
+TODO:
+  -thin underline under matt mammano in logo
+  -works, about, hire - in the menu bar
+
+-->
+
+<html lang="us">
+  <head>
+    <title>Matt Mammano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="ss.css" type="text/css">
+    <script type="text/javascript" src="functions.js"></script>
+  </head>
+  <body>
+    <div class="menuBar">
+      <img src="Pics/menuBar.svg" alt="menu">
+    </div>
+    <div class="containerTop" id="home">
+      <div class="mattMammanoLogo">
+        <div>
+          matt mammano
+        </div>
+      </div>
+      <div class="webHead">
+        web <span class="blueToPurple">developer</span> & <span class="purpleToPink">designer</span>
+      </div>
+      <div class="webBody">
+        For the past five years I’ve been creating websites, exploring new technologies, and programming robust applications.<br>
+        <button class="actionButton" onclick="location.href='#works';">view works</button>
+      </div>
+      <div class="downArrow">
+        <img src="Pics/downArrow.svg" alt="scroll down">
+      </div>
+    </div>
+    <div class="containerMiddle">
+      <div class="worksHead" id="works">
+        <a href="#works">works</a>
+      </div>
+      <div class="worksBody">
+        <div class="work1">
+          <div class="wHolding">
+            <div class="wHead">
+              Open The Door
+            </div>
+            <div class="wBody">
+              This was the first website I developed and was for the special needs class to help the teachers keep track of where their students were going.
+            </div>
+          </div>
+          <img src="Pics/w1.png" alt="Website 1">
+        </div>
+        <div class="work2">
+          <div class="wHolding">
+            <div class="wHead">
+              Special Needs Job Locator
+            </div>
+            <div class="wBody">
+              This website was created to assist the students with disabilities in our school to find jobs that they had interests in.
+            </div>
+          </div>
+          <img src="Pics/w2.jpg" alt="Website 2">
+        </div>
+        <div class="work3">
+          <div class="wHolding">
+            <div class="wHead">
+              Structure
+            </div>
+            <div class="wBody">
+              I created this website to practice my front-end skills and ended up really liking the way that it came out.
+            </div>
+          </div>
+          <img src="Pics/w3.svg" alt="Website 3">
+        </div>
+        <div class="work4">
+          <div class="wHolding">
+            <div class="wHead">
+              Red Bank Orthodontics
+            </div>
+            <div class="wBody">
+              This was my first website done for a client and it ended up being a success. It allows patients to schedule their appointments online.
+            </div>
+          </div>
+          <img src="Pics/w4.jpg" alt="Website 4">
+        </div>
+        <div class="work5">
+          <div class="wHolding">
+            <div class="wHead">
+              Virtual Interactive Planner
+            </div>
+            <div class="wBody">
+              A team of students and I created this website which won the Congressional App Contest.
+            </div>
+          </div>
+          <img src="Pics/w5.svg" alt="Website 5">
+        </div>
+        <div class="work6">
+          <div class="wHolding">
+            <div class="wHead">
+              Fish Feed
+            </div>
+            <div class="wBody">
+              This website demonstrates how a Raspberry Pi can be used in collaboration with other computers to feed a pet fish at certain times.
+            </div>
+          </div>
+          <img src="Pics/w6.jpeg" alt="Website 6">
+        </div>
+      </div>
+      <div class="aboutHead" id="about">
+        <a href="#about">about</a>
+      </div>
+      <div class="aboutBody">
+        <div class="pic1">
+          <img src="Pics/a1.jpg" alt="About 1">
+        </div>
+        <div class="words1">
+          <div class="head">
+            why work with me?
+          </div>
+          Since I first became interested in coding, I strived to become fluent in many programming languages. I have mastered many, including HTML/CSS, JavaScript, PHP, Python, SQL, Java, C/C++, and more. I also have the experience of working with countless clients who have all had positive experiences with me and the work I put forward. I’m dedicated to create the exact images that others imagine and in doing so create beautiful websites.
+        </div>
+        <div class="words2">
+          <div class="head">
+            qualifications
+          </div>
+          I have many accomplishments in this field of work to prove my worth as a potential developer for your website. I created the application known as Virtual Interactive Planner which went on to win the Congressional App Contest. Additionally, I have had jobs to make websites for companies such as Red Bank Orthodontics.
+        </div>
+        <div class="pic2">
+          <img src="Pics/a2.jpg" alt="About 2">
+        </div>
+      </div>
+      <div class="hireHead" id="hire">
+        <a href="#hire">hire</a>
+      </div>
+      <div class="hireBody">
+        <form action="contact.php" method="post" name="contactForm">
+          <div>
+            <input type="text" name="name" placeholder="name">
+          </div>
+          <div>
+            <input type="text" name="email" placeholder="email">
+          </div>
+          <div class="texty">
+  					message:
+  			    <textarea name="body" rows=10></textarea>
+  			  </div>
+          <div>
+            <button type="submit" action="" class="actionButton">submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="phone">
+          <a href="tel:9089105439">phone</a>
+        </div>
+        <div class="email">
+          <a href="mailto:mattmammanoweb@gmail.com">email</a>
+        </div>
+        <div class="v">
+          <a href="#">v2</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  isInViewport();
+
+  function isInViewport() {
+    const rect = document.getElementsByClassName("downArrow")[0].getBoundingClientRect();
+    if (!(rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth))) {
+          document.getElementsByClassName("downArrow")[0].style.alignSelf = "start";
+        }
+    else document.getElementsByClassName("downArrow")[0].style.alignSelf = "end";
+  }
+</script>

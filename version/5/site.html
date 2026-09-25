@@ -1,0 +1,123 @@
+<!--
+
+TODO:
+  -bring to life CHANGE possibly [Let's get in touch if you have an idea to bring to life]
+  -hyperlink congressional app
+  -justifying text alignment external attact=hment thingy
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ss.css" type="text/css">
+    <script src="include.js" type="text/javascript"></script>
+    <title>Matt Mammano</title>
+  </head>
+  <body>
+    <div class="landingPage">
+      <div class="menuBar">
+        <img src="Pics/initialsLogo.svg" class="initialsLogo" alt="MM">
+        <!-- <img src="Pics/hamburger.svg" class="hamburger" alt="menu"> -->
+      </div>
+      <div class="bio" id="bio">
+        <div id="bio1" class="bio1">Hi, I'm</div>
+        <div class="bio2">
+          <div id="bio2">
+            Matt Mammano
+          </div>
+        </div>
+        <div class="bio3">
+          <div id="bio3">Freelance Web Designer and Developer</div>
+        </div>
+        <div class="bio4">I design small-scale websites and comprehensive apps from Point Pleasant, New Jersey with a focus on producing dynamic web components for PCs and mobile devices. Feel free to contact me with the information below.</div>
+      </div>
+      <img src="Pics/scrollArrow.svg" class="scrollArrow" id="scrollArrow" alt="scroll down">
+    </div>
+    <div class="worksPage" id="worksPage">
+      <div class="work" id="work">
+        <img onclick="window.location.href = 'https://redbankortho.com/';" src="Pics/worksImg1.svg"></img>
+        <div class="workDesc">
+          Red Bank Ortho (2020) - I designed and developed this website for Red Bank Orthodontics,
+          to replace their old website. It allows you to make appointments online
+          and fill out forms before you arrive. I also utilized dynamic styles to
+          fit both mobile and desktop devices and new development techniques such as
+          a menu bar and slideshow.
+        </div>
+      </div>
+      <div id="work2" class="work">
+        <img onclick="window.location.href = 'http://pointborohs.org/!Matt/SNJL/home.php';" src="Pics/worksImg2.svg"></img>
+        <div class="workDesc">
+          Special Needs Job Locator (2019) - This website was made for the special needs class in my school and
+          allows them to apply for jobs in their neighborhood. A large
+          amount of students from that classroom normally become factory workers
+          or do some type of manual labor - so I wanted to be able to
+          provide alternatives for them. With this service, employers can sign
+          up and make a job for students in the area to apply for. The teens
+          can filter through the occupations by their interests and distance
+          from their home.
+        </div>
+      </div>
+      <div id="work3" class="work">
+        <img onclick="window.location.href = 'http://pointborohs.org/VIP/home.php';" src="Pics/worksImg3.svg"></img>
+        <div class="workDesc">
+          Virtual Interactive Planner (2019) - This web application - which I was the lead programmer for - won
+          the Congressional App Challenge. It is a task manager website that
+          is still in progress and will soon allow you to plan scheduled times
+          for your homework and other activities throughout the day. Many students
+          have trouble planning their school work and after-school activities
+          that studies show can lead to anxiety and depression. This website attempts to
+          prevent that and instead provides an easy to understand UI for all
+          ages to plan their work.
+        </div>
+      </div>
+      <div id="work4" class="work">
+        <img onclick="window.location.href = 'http://pointborohs.org/!Matt/OpenTheDoor/home.php';" src="Pics/worksImg4.svg"></img>
+        <div class="workDesc">
+          Open The Door (2019) - This website was made for the special needs class when
+          one of the teachers confronted me about a problem they were having.
+          Too many students were leaving the classroom and wandering around
+          the halls for extended periods of time. This gave me the idea
+          to make a sign-in/sign-out application that allows the students
+          to easily enter where they are going and tap sign in when they
+          return. Teachers are then able to print the data logs at the end of the day.
+        </div>
+      </div>
+    </div>
+    <div class="endPage">
+      <div class="outside">
+        <div class="main" id="main">Let's get in touch if you have an idea to bring to life!</div>
+        <div class="sec">
+          <div><a href="tel:908-910-5439">908-910-5439</a></div>
+          <div><a href="mailto:mattmammanoweb@gmail.com">mattmammanoweb@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  var count = 0;
+  window.setInterval(function() {
+    if (count < 2) {
+      fitty('#bio2', {minSize: 10, multiLine: true});
+      fitty('#bio3', {minSize: 10, multiLine: true});
+      // document.getElementById("zoomL").style.top = document.getElementById("bio1").getBoundingClientRect().top + "px";
+      // document.getElementById("zoomL").style.left = document.getElementById("bio1").getBoundingClientRect().left + "px";
+      // document.getElementById("zoomR").style.bottom = document.getElementById("bio1").getBoundingClientRect().bottom + "px";
+      // document.getElementById("zoomR").style.right = document.getElementById("bio4").getBoundingClientRect().right + "px";
+
+    }
+    else if (count < 3) {
+      if ((Math.abs(document.getElementById("work3").getBoundingClientRect().top - document.getElementById("work4").getBoundingClientRect().top) > 5) &&
+          (Math.abs(document.getElementById("work2").getBoundingClientRect().top - document.getElementById("work3").getBoundingClientRect().top) < 5)) {
+        document.getElementById("worksPage").style.gridTemplateColumns = "repeat(2, minmax(200px, 1fr))";
+      }
+    }
+    else if (count < 4) {
+      fitty('#main', {minSize: 10, multiLine: true});
+    }
+    count++;
+  }, 1000);
+</script>

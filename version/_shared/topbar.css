@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+}
+
+.archive-topbar {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+  height: 28px;
+  padding: 0 16px;
+  background: #000;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.archive-topbar .field {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.archive-topbar .field .label {
+  opacity: 0.55;
+  margin-right: 5px;
+}
+
+.archive-topbar .field.notes:empty {
+  display: none;
+}
+
+.archive-iframe {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 28px);
+  border: 0;
+}

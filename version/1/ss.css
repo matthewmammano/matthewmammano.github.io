@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Metrophobic&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/*
+FONTS:
+font-family: 'Roboto Slab', serif;
+font-family: 'Metrophobic', sans-serif;
+font-family: 'Hind', sans-serif;
+
+COLORS:
+#8CFF98
+#000000
+*/
+
+
+
+/* STANDARD ------------------------------------------------------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline solid transparent;
+  color: white;
+  font-weight: 300;
+}
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("!Pics/MattMammano.svg");
+  background-size:     98% auto;
+  background-repeat:   no-repeat;
+  background-position: top right;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #282828;
+  font-family: 'Metrophobic', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: url("!Pics/Cursor.png"), pointer;
+}
+a {
+  transition: all .5s ease 0s;
+}
+.in {
+  opacity: 0;
+  animation: fade-slide-up 1s 1s ease-out forwards;
+}
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.showOnScroll {
+
+}
+
+/* FONTS AND BUTTONS ------------------------------------------------------------------------------------------------------------------------- */
+
+.large {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 900;
+  font-size: 4.3rem;
+  margin-bottom: 20px;
+}
+.small {
+  font-family: 'Metrophobic', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.medium {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+button {
+  transition: all 0.75s ease-in-out;
+  text-decoration: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  color: #121212;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  background-size: 1000% auto;
+}
+button:hover {
+  background-position: right center;
+}
+[class^="buttonWhite"]  {
+  background-image: linear-gradient(to right, white, #8CFF98);
+}
+[class^="buttonGreen"] {
+  background-image: linear-gradient(to right, #8CFF98, white);
+}
+[class$="BBB"] {
+  padding: 15px 40px;
+}
+
+/* BIG CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "left right";
+}
+.right {
+  grid-area: right;
+}
+.left {
+  grid-area: left;
+  background-color: black;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto auto auto 1fr;
+  grid-template-areas:
+  "space1"
+  "homeL"
+  "portfolioL"
+  "aboutL"
+  "hireL"
+  "space2";
+  position: fixed;
+  z-index: 3;
+}
+.space1 {
+  grid-area: space1;
+}
+.homeL {
+  grid-area: homeL;
+}
+.portfolioL {
+  grid-area: portfolioL;
+}
+.aboutL {
+  grid-area: aboutL;
+}
+.hireL {
+  grid-area: hireL;
+}
+.space2 {
+  grid-area: space2;
+}
+.spacingLR {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 125px;
+}
+
+/* MAIN CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+.indexContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 175px auto 50px;
+  grid-template-areas:
+  "rHeader"
+  "content"
+  "footer";
+}
+.rHeader {
+  grid-area: rHeader;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.rHeader div {
+  padding: 0px 40px;
+}
+.content {
+  grid-area: content;
+}
+.footer {
+  grid-area: footer;
+  font-size: 0.8rem;
+  padding: 10px 10px 10px 0px;
+  font-family: 'Padauk', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background-color: black;
+  line-height: 1.75;
+}
+
+/* SUB CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+
+.contentContainer {
+  padding-top: 75px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+  "intro hireTop"
+  "projects projects"
+  "projectsCubes projectsCubes"
+  "about daPig"
+  "about2 about2"
+  "hire hire"
+  "hireBottom contact";
+}
+.intro {
+  grid-area: intro;
+  margin: 0px 100px 150px 150px;
+}
+.intro .small {
+  margin-bottom: 20px;
+}
+.centeredButton {
+  text-align: center;
+  margin-bottom: 250px;
+}
+.hireTop {
+  grid-area: hireTop;
+}
+.pig {
+  width: 50%;
+  right: 0;
+  position: absolute;
+  -webkit-animation: mover 3s infinite alternate;
+  animation: mover 3s infinite alternate;
+}
+.pig2 {
+  width: 30%;
+  right: 0;
+  position: absolute;
+  -webkit-animation: mover 3s infinite alternate;
+  animation: mover 3s infinite alternate;
+  padding-top: 50px;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+@keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+.projects {
+  grid-area: projects;
+  background-color: #373737;
+  padding-top: 20px;
+  padding-left: 150px;
+}
+.about {
+  grid-area: about;
+  padding: 20px 0px 150px 150px;
+}
+.daPig {
+  grid-area: daPig;
+}
+.hire {
+  grid-area: hire;
+  text-align: center;
+  background-color: #373737;
+  padding: 20px 0px 0px 150px;
+}
+.hire .large {
+  text-align: left;
+}
+.image {
+  width: 60%;
+}
+.aboutBox {
+  background-color: white;
+  color: black;
+  padding: 50px;
+  text-align: justify;
+  line-height: 2;
+}
+.hireBottom {
+  grid-area: hireBottom;
+  padding: 0px 100px 0px 150px;
+  background-color: #373737;
+}
+.contact {
+  grid-area: contact;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  background-color: #373737;
+}
+.contactBox {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: justify;
+  line-height: 2;
+}
+.underlined {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.footer img {
+  margin-left: 110px;
+  width: 150px;
+}
+
+/* SUB SUB CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+
+.projectsCubes {
+  grid-area: projectsCubes;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "site1 site2"
+  "site3 site4";
+  background-color: #373737;
+  padding: 0px 0px 150px 150px;
+}
+.projectsCubes div img:hover {
+  cursor: pointer;
+}
+.site1 {
+  grid-area: site1;
+  padding: 50px 200px 50px 0px;
+  text-align: center;
+}
+.site2 {
+  grid-area: site2;
+  padding: 50px 200px 50px 0px;
+  text-align: center;
+}
+.site3 {
+  grid-area: site3;
+  padding: 50px 200px 50px 0px;
+  text-align: center;
+}
+.site4 {
+  grid-area: site4;
+  padding: 50px 200px 50px 0px;
+  text-align: center;
+}
+.img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.notCenter {
+  text-align: justify;
+}
+
+/* 2ND SUB SUB CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+
+.about2 {
+  grid-area: about2;
+  padding: 0px 0px 200px 150px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "one two three";
+  line-height: 2;
+}
+.one {
+  grid-area: one;
+  margin-right: 100px;
+}
+.two {
+  grid-area: two;
+  margin-right: 100px;
+}
+.three {
+  grid-area: three;
+  margin-right: 100px;
+}
+.about2 div {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+.noPad {
+  padding: 0px !important;
+  text-align: justify;
+}
+.medLargeFont {
+  font-size: 2.5rem !important;
+}
+.spacingLR a img {
+  width: 100%;
+  z-index: 5;
+  filter: invert(100%);
+}

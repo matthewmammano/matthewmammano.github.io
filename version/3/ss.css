@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Fredoka+One&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+/*
+FONTS:
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+
+COLORS:
+  white
+  #e5e5e5
+  #666666
+  #343434
+  black
+
+FUNCTIONS:
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+*/
+
+
+
+
+/* STANDARD ------------------------------------------------------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: pink;
+}
+html {
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 5rem;
+  font-weight: 700;
+  background-color: #222222;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.75s ease-in-out;
+}
+
+/* FONTS AND BUTTONS ------------------------------------------------------------------------------------------------------------------------- */
+
+/* CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+.titleBar {
+  position: absolute;
+  top: 0;
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
+  font-size: 50px;
+  font-size: calc(35px + (50 - 35) * ((100vw - 375px) / (2000 - 375)));
+  color: black;
+  padding: 10px 25px;
+  z-index: 999;
+}
+.titleBar {
+  left: 0;
+}
+.menuBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  justify-content: end;
+  justify-items: end;
+  align-items: center;
+  padding: 25px 50px 0px 0px;
+  z-index: 4;
+}
+.hamburger {
+  width: 150px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 25px 50px;
+  display: none;
+}
+.menuBar div {
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
+  font-size: 30px;
+  color: black;
+  margin-left: 6vw;
+}
+/* .hireButton {
+  border: 3px solid black;
+  padding: 2px 20px;
+} */
+.worksButton {
+  width: auto !important;
+  border: 3px solid black;
+  padding: 2px 20px;
+  display: inline-block;
+  margin-top: 25px;
+  z-index: 4;
+}
+
+.landingPage {
+  width: 100vw;
+  height: 99vh;
+  height: -webkit-fill-available;
+  background-image: linear-gradient(to bottom, #1c5fc8ff, #d99ad9ff, #fce5cdff);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .landingPage img {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+  .foreground {
+    z-index: 1;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .landingPage div {
+    z-index: 100;
+  }
+  .background {
+    z-index: 0;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .landingPage > div {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    padding: 10px 50px;
+  }
+  .callToAction {
+    font-family: 'Francois One', sans-serif;
+    font-weight: normal;
+    font-size: calc(50px + (110 - 50) * ((100vw - 375px) / (2000 - 375)));
+    color: black;
+  }
+  .callDescription {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: black;
+    width: 40vw;
+  }
+
+.worksPage {
+  width: 100vw;
+}
+  .underground {
+    position: relative;
+    top: -3px;
+    right: 0;
+  }
+  .sub {
+    text-align: center;
+    color: #C4C4C4;
+    font-size: calc(50px + (80 - 50) * ((100vw - 375px) / (2000 - 375))) !important;
+    padding-top: 50px;
+  }
+  .subSub {
+    text-align: center;
+    color: #C4C4C4;
+    font-size: calc(50px + (80 - 50) * ((100vw - 375px) / (2000 - 375))) !important;
+    padding-top: 250px;
+  }
+  .worksGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px 50px;
+  }
+    .worksGrid div:nth-child(odd) {
+      justify-self: end;
+    }
+    .worksGrid div:nth-child(even) {
+      justify-self: start;
+    }
+    .worksGrid div img {
+      --widthSize: 30vw;
+      width: var(--widthSize);
+      height: calc(var(--widthSize) / 1.5);
+      object-fit: cover;
+    }
+.aboutPage {
+  width: 100vw;
+}
+  .aboutGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    gap: 100px;
+    padding: 0px 10vw 0px 10vw;
+  }
+    .aboutGrid div {
+      background-color: #C4C4C4;
+      color: black;
+      min-width: 20vw;
+    }
+    .aboutGrid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+      .aboutGrid2 div img {
+        width: 30vw;
+        object-fit: cover;
+        height: 100%;
+      }
+  .shadedDiv {
+    width: 100vw;
+    text-align: center;
+    padding: 0px 20vw 0px 20vw;
+  }
+    .shadedDiv img {
+      min-width: 30vw;
+      max-width: 800px;
+    }
+.hirePage {
+  width: 100vw;
+  height: auto;
+}
+
+/* OTHER ------------------------------------------------------------------------------------------------------------------------- */
+.mainText {
+  font-family: 'Francois One', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  padding: 10px;
+}
+.subText {
+  font-family: 'Tajawal', sans-serif;  font-weight: normal;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 10px;
+}
+ul, li {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  list-style-position: inside;
+  margin-left: 5px;
+}
+
+/* MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------- */
+@media (max-device-width: 1000px) {
+  .menuBar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .callDescription {
+    width: 80vw;
+  }
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0px 3vw 0px 3vw;
+  }
+  .aboutGrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .imgDiv {
+    display: none;
+  }
+}

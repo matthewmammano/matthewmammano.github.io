@@ -1,0 +1,123 @@
+<!--
+
+TODO:
+  -onclick rearrange z-index order to the one clicked on top
+
+QUESTION:
+  -
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="us">
+  <head>
+    <title>Matt Mammano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ss.css" type="text/css">
+    <script type="text/javascript" src="functions.js"></script>
+  </head>
+  <body>
+    <div id="whole">
+      <div class="window" id="window1">
+        <div class="menuBar" id="menuBar1">
+          <div class="iconDiv">
+            <img class="iconImg" src="Pics/nameImg.svg">
+          </div>
+          <p>C:\System\name.exe</p>
+          <div><img src="Pics/minimize.svg" alt="minimize"></div>
+          <div><img src="Pics/maximize.svg" alt="maximize"></div>
+          <div><img src="Pics/close.svg" alt="close"></div>
+        </div>
+        <div class="nameGRID">
+          <div>NAME</div>
+          <div>Matt Mammano</div>
+          <div>JOB</div>
+          <div>Web Developer/Designer</div>
+          <div>ABOUT</div>
+          <div>I'm a freelance web dev with years of experience ready to create a personalized application for you.</div>
+        </div>
+      </div>
+      <div class="window" id="window2">
+        <div class="menuBar" id="menuBar2">
+          <div class="iconDiv">
+            <img class="iconImg" src="Pics/hireImg.svg">
+          </div>
+          <p>C:\Hire</p>
+          <div><img src="Pics/minimize.svg" alt="minimize"></div>
+          <div><img src="Pics/maximize.svg" alt="maximize"></div>
+          <div><img src="Pics/close.svg" alt="close"></div>
+        </div>
+        <p class="hireP">Feel free to contact me if you are interested in working with someone willing to go above and beyond to develop your website.</p>
+        <div class="hireGRID">
+          <div><img class="" src="Pics/.svg"></div>
+          <div><img class="" src="Pics/.svg"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    whole = document.getElementById("whole");
+    myDiv = document.getElementById("menuBar1");
+    myDiv2 = document.getElementById("menuBar2");
+
+    whole.addEventListener('mouseup', wholeDown);
+    whole.addEventListener('mousemove', wholeDown);
+
+    myDiv.addEventListener('mousedown', mouseDown1);
+
+    myDiv2.addEventListener('mousedown', mouseDown2);
+
+    var currentlyDown = false;
+    var lastWindowMoved;
+    var mouseX;
+    var mouseY;
+    var divLeft;
+    var divTop;
+
+    function wholeDown(e) {
+      moving(e, "whole", "aaa");
+    }
+    function mouseDown1(e) {
+      moving(e, "menuBar1", "window1");
+    }
+    function mouseDown2(e) {
+      moving(e, "menuBar2", "window2");
+    }
+    function moving(e, barName, windowName) {
+      var x = 0;
+      var y = 0;
+      if (event.type == "mousedown") {
+        currentlyDown = true;
+        lastWindowMoved = windowName;
+        mouseX = e.screenX;
+        mouseY = e.screenY;
+        var rects = document.getElementById(barName).getClientRects();
+        var rect = rects[0];
+        divLeft = rect.left;
+        divTop = rect.top;
+        divRight = rect.right;
+        divBottom = rect.bottom;
+        console.log("MOVING - down");
+      }
+      else if (barName == "whole" && event.type == "mousemove") {
+        if (currentlyDown) {
+          console.log("MOVING - move");
+          var mouseDiffX = mouseX - e.screenX;
+          var mouseDiffY = mouseY - e.screenY;
+          document.getElementById(lastWindowMoved).style.left = divLeft - mouseDiffX + "px";
+          document.getElementById(lastWindowMoved).style.top = divTop - mouseDiffY + "px";
+        }
+      }
+      else if (event.type == "mouseup") {
+        currentlyDown = false;
+        console.log("MOVING - up");
+      }
+    }
+  }
+  else window.alert("no");
+</script>

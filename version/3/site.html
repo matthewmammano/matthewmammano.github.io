@@ -1,0 +1,113 @@
+<!--
+
+TODO:
+  -back to top button
+  -make hamburger work with popup links
+  -create background image animations:
+      -star twinkle
+      -fire smoke
+      -house light flicker
+      -cave formations drip
+  -add more details to the background image:
+      -city in the background in mountains
+      -faint lines connecting dipper
+  -make better about img
+
+-->
+
+<html lang="us">
+  <head>
+    <title>matt mammano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="ss.css" type="text/css">
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+  </head>
+  <body>
+    <div class="titleBar">matt mammano</div>
+    <img onclick="menuBar()" class="hamburger" src="Pics/hamburger.svg"/>
+    <div class="menuBar">
+      <div onclick="location.href='#works';">works</div>
+      <div onclick="location.href='#about';">about</div>
+      <div class="hireButton" onclick="location.href='#hire';">hire</div>
+    </div>
+
+    <div class="landingPage">
+      <img class="background" src="Pics/background.svg" alt="background">
+      <div>
+        <div class="callToAction">
+          web developer
+        </div>
+        <div class="callDescription">
+          Hello, I’m Matt Mammano and I am a freelance website developer and designer. I have gained a great deal of experience over the past years and now program applications and sites for businesses.
+        </div>
+        <div class="callDescription worksButton" onclick="location.href='#works';">
+          view works
+        </div>
+      </div>
+    </div>
+    <div class="worksPage">
+      <img class="underground" src="Pics/underground.svg" alt="underground">
+      <div class="callToAction sub" id="works">works</div>
+      <div class="worksGrid">
+        <div>
+          <img src="Pics/w1.png">
+        </div>
+        <div>
+          <img src="Pics/w2.jpg">
+        </div>
+        <div>
+          <img src="Pics/w3.svg">
+        </div>
+        <div>
+          <img src="Pics/w4.jpg">
+        </div>
+        <div>
+          <img src="Pics/w5.svg">
+        </div>
+        <div>
+          <img src="Pics/w6.jpeg">
+        </div>
+      </div>
+    </div>
+    <div class="aboutPage">
+      <div class="callToAction subSub" id="about">about</div>
+      <div class="aboutGrid">
+        <div class="aboutGrid2">
+          <div class="imgDiv">
+            <img src="Pics/topComp.jpg">
+          </div>
+          <div>
+            <div class="mainText">my life</div>
+            <div class="subText">
+              Hello, I’m Matt Mammano, and I develop and design websites. I have four years of experience programming complex web applications and have many clients. Please contact me if you are at all interested in the services I provide. Thanks!
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="mainText">skills</div>
+            <div class="subText">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hirePage">
+
+    </div>
+  </body>
+</html>

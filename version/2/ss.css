@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Allerta&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+/*
+FONTS:
+  font-family: 'Allan', cursive;
+  font-family: 'Allerta', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+
+COLORS:
+  #0094ff
+  #bc11f9
+  #f121c3
+
+  white
+  #e5e5e5
+  #666666
+  #343434
+  black
+*/
+
+
+
+/* STANDARD ------------------------------------------------------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: pink;
+}
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 5rem;
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
+form div {
+  color: #666666;
+}
+form div:last-child {
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  border: 3px solid #666666;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #666666;
+  outline: none;
+}
+input {
+  border-bottom: 3px solid #666666;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  background: transparent;
+  color: #666666;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 300;
+  width: 100%;
+  padding-top: 50px;
+  outline: none;
+}
+::selection {
+  background: #f121c3; /* WebKit/Blink Browsers */
+  /* color: black; */
+}
+::-moz-selection {
+  background: #f121c3; /* Gecko Browsers */
+  /* color: black; */
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.75s ease-in-out;
+}
+a:hover {
+  text-decoration-color: #666666;
+}
+
+/* FONTS AND BUTTONS ------------------------------------------------------------------------------------------------------------------------- */
+.blueToPink {
+  background: -webkit-linear-gradient(left, #0094ff, #f121c3) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.blueToPurple {
+  background: -webkit-linear-gradient(left, #0094ff, #bc11f9) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.purpleToPink {
+  background: -webkit-linear-gradient(left, #bc11f9, #f121c3) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.actionButton {
+  transition: all 0.75s ease-in-out;
+  margin: 25 auto;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 11px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
+  background-image: linear-gradient(to right, #0094ff, #f121c3);
+  background-size: 275% auto;
+}
+.actionButton:hover {
+  background-position: right center;
+}
+
+/* CONTAINER ------------------------------------------------------------------------------------------------------------------------- */
+.containerTop {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto) 1fr;
+  grid-template-areas:
+    "mattMammanoLogo"
+    "webHead"
+    "webBody"
+    "downArrow";
+}
+.mattMammanoLogo {
+  grid-area: mattMammanoLogo;
+  text-align: center;
+  font-family: 'Allan', cursive;
+  font-size: 17vw;
+  font-weight: normal;
+  color: black;
+  padding-top: 175px;
+}
+  .mattMammanoLogo div {
+    transform: rotate(-4deg);
+    font-weight: inherit;
+    color: inherit;
+    line-height: 75%;
+    /* text-decoration: underline; */
+  }
+  .mattMammanoLogo div:hover {
+    background: -webkit-linear-gradient(right, #0094ff, #f121c3) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+.webHead {
+  grid-area: webHead;
+  text-align: center;
+  font-family: 'Allerta', sans-serif;
+  font-size: calc(30px + (55 - 30) * ((100vw - 375px) / (1800 - 375)));
+  font-weight: normal;
+  color: #666666;
+  padding-top: 125px;
+}
+.webBody {
+  grid-area: webBody;
+  text-align: center;
+  max-width: 1100px;
+  font-family: 'Tajawal', sans-serif;
+  /* font-size: 2rem; */
+  font-size: calc(25px + (32 - 25) * ((100vw - 375px) / (1800 - 375)));
+  font-weight: 300;
+  color: #666666;
+  padding-top: 25px;
+}
+.downArrow {
+  grid-area: downArrow;
+  align-self: end;
+}
+  .downArrow img {
+    width: 100px;
+  }
+.containerMiddle {
+  display: grid;
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "worksHead"
+    "worksBody"
+    "aboutHead"
+    "aboutBody"
+    "hireHead"
+    "hireBody"
+    "footer";
+}
+.worksHead {
+  grid-area: worksHead;
+  text-align: center;
+  font-family: 'Allerta', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #666666;
+  margin-top: 200px;
+}
+.worksBody {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "work1 work2"
+    "work3 work4"
+    "work5 work6";
+  grid-area: worksBody;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #666666;
+  padding-top: 50px;
+}
+  [class^="work"] {
+    height: 100%;
+  }
+  [class^="work"] > img {
+    transition: all 0.75s ease-in-out;
+    object-fit: cover !important;
+    display: block;
+    width: 100%;
+    height: inherit;
+  }
+  .wHolding {
+    color: transparent;
+    transition: all 0.75s ease-in-out;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 60%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+  }
+  .worksBody [class^="work"]:hover img {
+    filter: brightness(0.2) grayscale(1);
+  }
+  .worksBody [class^="work"]:hover .wHolding {
+    color: white;
+  }
+  .wHead, .wBody {
+    color: inherit;
+  }
+  .wHead {
+    padding-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .wBody {
+    font-weight: 200;
+    font-size: calc(20px + (35 - 20) * ((100vw - 375px) / (1800 - 375)));
+  }
+  .work1 {
+    grid-area: work1;
+    position: relative;
+  }
+  .work2 {
+    grid-area: work2;
+    position: relative;
+  }
+  .work3 {
+    grid-area: work3;
+    position: relative;
+  }
+  .work4 {
+    grid-area: work4;
+    position: relative;
+  }
+  .work5 {
+    grid-area: work5;
+    position: relative;
+  }
+  .work6 {
+    grid-area: work6;
+    position: relative;
+    height: 400px !important;
+  }
+.aboutHead {
+  grid-area: aboutHead;
+  text-align: center;
+  font-family: 'Allerta', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #666666;
+  margin-top: 200px;
+}
+.aboutBody {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "pic1 words1"
+    "words2 pic2";
+  grid-area: aboutBody;
+  text-align: center;
+  font-family: 'Tajawal', sans-serif;
+  font-size: calc(20px + (35 - 20) * ((100vw - 375px) / (1800 - 375)));
+  font-weight: 300;
+  color: #666666;
+  padding-top: 50px;
+}
+  .pic1 {
+    grid-area: pic1;
+  }
+  .pic2 {
+    grid-area: pic2;
+  }
+  .words1 {
+    grid-area: words1;
+  }
+  .words2 {
+    grid-area: words2;
+  }
+  .aboutBody [class^="pic"] img {
+    width: 100%;
+    object-fit: cover !important;
+  }
+  .aboutBody [class^="words"] {
+    color: #666666;
+  }
+  .aboutBody [class^="words"] .head {
+    font-family: 'Allerta', sans-serif;
+    font-size: calc(30px + (55 - 30) * ((100vw - 375px) / (1800 - 375)));
+    color: #666666;
+    padding-bottom: 50px;
+  }
+  .words1 {
+    text-align: left;
+    padding: 25px 110px 25px 25px;
+  }
+  .words2 {
+    text-align: right;
+    padding: 25px 25px 25px 110px;
+  }
+.hireHead {
+  grid-area: hireHead;
+  text-align: center;
+  font-family: 'Allerta', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #666666;
+  margin: 200px 0px 25px 0px;
+}
+.hireBody {
+  grid-area: hireBody;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #666666;
+  width: 40%;
+}
+  .texty {
+    padding-top: 50px;
+  }
+.footer {
+  grid-area: footer;
+  background-color: #343434;
+  width: 100%;
+  margin-top: 200px;
+  padding-top: 50px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  padding-bottom: 25px;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "phone email v";
+}
+  .footer div {
+    padding-right: 10px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .footer div a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.75s ease-in-out;
+  }
+  .footer div a:hover {
+    text-decoration-color: white;
+  }
+  .phone {
+    grid-area: phone;
+  }
+  .email {
+    grid-area: email;
+  }
+  .v {
+    grid-area: v;
+  }
+
+.containerTop {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto) 1fr;
+  grid-template-areas:
+    "mattMammanoLogo"
+    "webHead"
+    "webBody"
+    "downArrow";
+}
+
+
+/* OTHER ------------------------------------------------------------------------------------------------------------------------- */
+.menuBar {
+  position: fixed;
+  width: 50px;
+  right: 25px;
+  top: 25px;
+  z-index: 10;
+}
+  .menuBar img {
+    width: 100%;
+  }
+
+
+  /* MEDIA QUERIES ------------------------------------------------------------------------------------------------------------------------- */
+@media (hover: none) {
+  .worksBody [class^="work"] img {
+    filter: brightness(0.5);
+  }
+  .worksBody [class^="work"] .wHolding {
+    color: white;
+  }
+}
+@media (max-device-width: 1200px) {
+  .words1, .words2 {
+    padding: 10px;
+  }
+  .aboutBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "words1"
+      "words2";
+    font-family: 'Tajawal', sans-serif;
+    padding-top: 50px;
+  }
+    .pic1, .pic2 {
+      display: none;
+    }
+    .words1, .words2 {
+      text-align: center;
+    }
+}
+@media (max-device-width: 1200px) {
+  .hireBody {
+    width: 80%;
+  }
+}
+@media (max-device-width: 800px) {
+  .worksBody {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "work1"
+      "work2"
+      "work3"
+      "work4"
+      "work5"
+      "work6";
+  }
+}
+@media (max-device-width: 600px) {
+  .webHead {
+    padding-top: 100px;
+  }
+}
