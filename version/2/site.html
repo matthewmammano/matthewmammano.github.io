@@ -134,7 +134,7 @@ TODO:
         <a href="#hire">hire</a>
       </div>
       <div class="hireBody">
-        <form action="contact.php" method="post" name="contactForm">
+        <form name="contactForm" onsubmit="window.location.href='mailto:mattmammanoweb@gmail.com?subject='+encodeURIComponent('Contact from '+this.name.value)+'&body='+encodeURIComponent(this.body.value+'\n\nFrom: '+this.name.value+' ('+this.email.value+')');return false;">
           <div>
             <input type="text" name="name" placeholder="name">
           </div>
