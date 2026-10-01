@@ -167,7 +167,7 @@ button {
     }
 .socialLinks {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   transform: translate(-50%, 0%);
   bottom: 0;
@@ -340,7 +340,7 @@ button {
     }
       #t-3 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: max(35%, 400px);
         max-width: 90%;
       }

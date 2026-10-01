@@ -182,9 +182,9 @@ body {
     }
     .endPage .sec {
       display: grid;
-      grid-template-columns: 50% 50%;
-      justify-content: space-between;
-      justify-items: stretch;
+      grid-template-columns: 100%;
+      justify-content: center;
+      justify-items: center;
       font-size: max(0.8rem, 2.25vmin);
     }
       .sec div {

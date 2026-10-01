@@ -387,10 +387,10 @@ a:hover {
 
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: 1fr;
   grid-template-areas:
-    "phone email v";
+    "email v";
 }
   .footer div {
     padding-right: 10px;
@@ -404,9 +404,6 @@ a:hover {
   }
   .footer div a:hover {
     text-decoration-color: white;
-  }
-  .phone {
-    grid-area: phone;
   }
   .email {
     grid-area: email;
