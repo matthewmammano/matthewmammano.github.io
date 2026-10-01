@@ -43,6 +43,7 @@
   "experience": [
     {
       "company": "PTC Therapeutics",
+      "logo": "img/logos/ptc.png",
       "tags": [
         "machine-learning",
         "ai",
@@ -64,6 +65,7 @@
     },
     {
       "company": "Stevens Institute of Technology",
+      "logo": "img/logos/stevens.png",
       "tags": [
         "machine-learning",
         "python",
@@ -79,6 +81,7 @@
     },
     {
       "company": "Gaming Laboratories International",
+      "logo": "img/logos/gli.png",
       "tags": [
         "python",
         "sql"
@@ -94,7 +97,7 @@
   ],
   "projects": [
     {
-      "image": "img/thesis.png",
+      "image": "img/projects/thesis.png",
       "alt": "Thesis title page: Sparsification of 3D Gaussian Splatting",
       "meta": "Aug 2026 · M.S. Thesis, Stevens Institute of Technology",
       "title": "Sparsification of 3D Gaussian Splatting",
@@ -108,7 +111,7 @@
       ]
     },
     {
-      "image": "img/pathtracer.png",
+      "image": "img/projects/pathtracer.png",
       "alt": "Path-traced living room render",
       "meta": "Apr 2026 · Parallel Programming for Many-Core Processors course project",
       "title": "Optimized Path Tracer",
@@ -122,7 +125,7 @@
       ]
     },
     {
-      "image": "img/inventoryiq.png",
+      "image": "img/projects/inventoryiq.png",
       "alt": "Inventory IQ restock-forecast screenshot",
       "meta": "2022 - present · started HS, revived for freelance in Apr 2025",
       "title": "Inventory IQ",
@@ -137,7 +140,7 @@
       ]
     },
     {
-      "image": "img/or83.png",
+      "image": "img/projects/or83.png",
       "alt": "OR '83 game screenshot",
       "meta": "Summers 2023 - 2024 · Stevens Pinnacle Scholars",
       "title": "OR '83",
@@ -150,7 +153,7 @@
       ]
     },
     {
-      "image": "img/branch.png",
+      "image": "img/projects/branch.png",
       "alt": "BR@NCH connection map screenshot",
       "meta": "Feb 2026 · QuackHacks hackathon",
       "title": "BR@NCH",
@@ -165,7 +168,7 @@
       ]
     },
     {
-      "image": "img/caviarclub.jpg",
+      "image": "img/projects/caviarclub.jpg",
       "alt": "Caviar waffle bites",
       "meta": "Apr 2024 · Human-Computer Interaction course project",
       "title": "Caviar Club",
@@ -178,7 +181,7 @@
       ]
     },
     {
-      "image": "img/crowdsource.jpg",
+      "image": "img/projects/crowdsource.jpg",
       "alt": "Crowdsourcing platform research screenshot",
       "meta": "2021 · IEEE MIT URTC",
       "title": "Crowdsourcing Platform Study",
@@ -191,7 +194,7 @@
       ]
     },
     {
-      "image": "img/toughluck.png",
+      "image": "img/projects/toughluck.png",
       "alt": "Tough Luck Township gameplay screenshot",
       "meta": "2021 · NJ Governor's School of Engineering & Technology",
       "title": "Tough Luck Township",
@@ -203,7 +206,7 @@
       ]
     },
     {
-      "image": "img/vip.png",
+      "image": "img/projects/vip.png",
       "alt": "Virtual Interactive Planner screenshot",
       "meta": "2019 · Congressional App Challenge winner",
       "title": "Virtual Interactive Planner",
@@ -215,7 +218,7 @@
       ]
     },
     {
-      "image": "img/redbank.jpg",
+      "image": "img/projects/redbank.jpg",
       "alt": "Red Bank Orthodontics site screenshot",
       "meta": "2020 · client work",
       "title": "Red Bank Orthodontics",
@@ -227,7 +230,7 @@
       ]
     },
     {
-      "image": "img/actiontime.png",
+      "image": "img/projects/actiontime.png",
       "alt": "ActionTime time-management app screenshot",
       "meta": "2019 · Monmouth University Summer Research",
       "title": "ActionTime",
@@ -240,7 +243,7 @@
       ]
     },
     {
-      "image": "img/structure.png",
+      "image": "img/projects/structure.png",
       "alt": "Structure day-scheduling app screenshot",
       "meta": "2020",
       "title": "Structure",
@@ -251,7 +254,7 @@
       ]
     },
     {
-      "image": "img/fishfeed.jpeg",
+      "image": "img/projects/fishfeed.jpeg",
       "alt": "Fish Feed Raspberry Pi project screenshot",
       "meta": "2020",
       "title": "Fish Feed",
@@ -265,7 +268,7 @@
       ]
     },
     {
-      "image": "img/otd.png",
+      "image": "img/projects/otd.png",
       "alt": "Open The Door screenshot",
       "meta": "2019 · volunteer, Point Boro HS special needs program",
       "title": "Open The Door",
@@ -278,7 +281,7 @@
       ]
     },
     {
-      "image": "img/snjl.png",
+      "image": "img/projects/snjl.png",
       "alt": "Special Needs Job Locator screenshot",
       "meta": "2019 · volunteer, Point Boro HS special needs program",
       "title": "Special Needs Job Locator",

@@ -300,9 +300,25 @@ section h2 {
   max-width: 58ch;
 }
 
+.role-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.role-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  background: #fff;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
 .role-group-title {
   font-weight: 600;
   font-size: 14.5px;
+  line-height: 1;
   margin: 0;
 }
 

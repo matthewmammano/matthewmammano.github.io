@@ -39,7 +39,10 @@ function renderMeta(meta) {
 function renderExperience(experience) {
   return experience.map(company => `
     <div class="role-item" data-tags="${company.tags.join(' ')}">
-      <div class="role-group-title">${company.company}</div>
+      <div class="role-head">
+        <img class="role-logo" src="${company.logo}" alt="${company.company} logo" loading="lazy" decoding="async">
+        <div class="role-group-title">${company.company}</div>
+      </div>
       <div class="role-sub-list">
         ${company.roles.map(role => `
           <div class="role-sub-item">
