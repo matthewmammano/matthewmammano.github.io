@@ -1,0 +1,325 @@
+{
+  "name": "Matthew Mammano",
+  "title": "Senior Machine Learning Engineer",
+  "location": "Point Pleasant, NJ",
+  "nav": [
+    {
+      "id": "about",
+      "label": "about"
+    },
+    {
+      "id": "experience",
+      "label": "experience"
+    },
+    {
+      "id": "projects",
+      "label": "projects"
+    },
+    {
+      "id": "education",
+      "label": "education"
+    },
+    {
+      "id": "contact",
+      "label": "contact"
+    }
+  ],
+  "meta": [
+    {
+      "key": "role",
+      "value": "Senior ML Engineer, PTC Therapeutics"
+    },
+    {
+      "key": "stack",
+      "value": "applied ml, pytorch, tensorflow, python, sql"
+    },
+    {
+      "key": "email",
+      "value": "mattmammanoweb@gmail.com",
+      "href": "mailto:mattmammanoweb@gmail.com"
+    }
+  ],
+  "about": "Senior Machine Learning Engineer at PTC Therapeutics, leading high-impact ML and AI projects in support of PTC's mission to deliver treatments for patients with rare disorders. M.S. in Machine Learning and B.S. in Computer Science from Stevens Institute of Technology. For my Master's thesis advised by Prof. Philippos Mordohai, I studied <strong>3D Gaussian Splatting Sparsification</strong> - shrinking 3D scene representations to an exact primitive budget while improving reconstruction quality. Interests: applied machine learning, deep learning, computer vision, 3D reconstruction, and data analysis.",
+  "experience": [
+    {
+      "company": "PTC Therapeutics",
+      "tags": [
+        "machine-learning",
+        "ai",
+        "python",
+        "azure",
+        "sql"
+      ],
+      "roles": [
+        {
+          "title": "Senior Machine Learning Engineer",
+          "meta": "2026 - present",
+          "desc": "Own end-to-end delivery of ML/AI projects, partnering with stakeholders across the business on data-driven solutions."
+        },
+        {
+          "title": "AI & ML Fellow (Contract)",
+          "meta": "2025 - 2026"
+        }
+      ]
+    },
+    {
+      "company": "Stevens Institute of Technology",
+      "tags": [
+        "machine-learning",
+        "python",
+        "mentorship"
+      ],
+      "roles": [
+        {
+          "title": "Teaching Assistant",
+          "meta": "2023 - 2025",
+          "desc": "Supported 60+ students per semester across ML and CS courses."
+        }
+      ]
+    },
+    {
+      "company": "Gaming Laboratories International",
+      "tags": [
+        "python",
+        "sql"
+      ],
+      "roles": [
+        {
+          "title": "Software QA Tester",
+          "meta": "summer 2024",
+          "desc": "Automated payout-data validation across 100K-1M row datasets, cutting manual checks by 2+ hrs/day."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "image": "img/thesis.png",
+      "alt": "Thesis title page: Sparsification of 3D Gaussian Splatting",
+      "meta": "Aug 2026 · M.S. Thesis, Stevens Institute of Technology",
+      "title": "Sparsification of 3D Gaussian Splatting",
+      "link": "files/thesis.pdf",
+      "desc": "M.S. thesis on pruning 3D Gaussian Splatting scenes to an exact primitive budget. Introduces a ground-truth-aware signed removal score and a staged population-refresh step that triples the Gaussian count before pruning back; improves 14 of 15 scene-metric comparisons on Tanks and Temples. Advised by Prof. Philippos Mordohai.",
+      "tags": [
+        "python",
+        "pytorch",
+        "cuda",
+        "gpu"
+      ]
+    },
+    {
+      "image": "img/pathtracer.png",
+      "alt": "Path-traced living room render",
+      "meta": "Apr 2026 · Parallel Programming for Many-Core Processors course project",
+      "title": "Optimized Path Tracer",
+      "link": "https://github.com/matthewmammano/optimized-path-tracer",
+      "desc": "CPU and CUDA path tracers culminating in a BVH-accelerated renderer, 29x faster than the baseline GPU implementation.",
+      "tags": [
+        "c",
+        "cuda",
+        "gpu",
+        "ray-tracing"
+      ]
+    },
+    {
+      "image": "img/inventoryiq.png",
+      "alt": "Inventory IQ restock-forecast screenshot",
+      "meta": "2022 - present · started HS, revived for freelance in Apr 2025",
+      "title": "Inventory IQ",
+      "link": "https://github.com/matthewmammano/inventory-iq",
+      "desc": "Full-stack field inventory system for EMS agencies: barcode scanning, audit history, usage-based restock forecasting. Started as a high school project, now a freelance product in active development.",
+      "tags": [
+        "python",
+        "flask",
+        "sql",
+        "js",
+        "html/css"
+      ]
+    },
+    {
+      "image": "img/or83.png",
+      "alt": "OR '83 game screenshot",
+      "meta": "Summers 2023 - 2024 · Stevens Pinnacle Scholars",
+      "title": "OR '83",
+      "link": "https://alexwellerstein.com/projects/oregon-road-83/",
+      "desc": "Programming coordinator and team lead for a Phaser 3 browser game on 1980s nuclear history, built with Prof. Alex Wellerstein's research group.",
+      "tags": [
+        "js",
+        "phaser",
+        "team-lead"
+      ]
+    },
+    {
+      "image": "img/branch.png",
+      "alt": "BR@NCH connection map screenshot",
+      "meta": "Feb 2026 · QuackHacks hackathon",
+      "title": "BR@NCH",
+      "link": "https://github.com/thinktactics/quack-hacks-2026",
+      "desc": "Skill-tree map app surfacing nearby points of interest as you explore. 4-person hackathon team, built with Flask, React, and Leaflet.",
+      "tags": [
+        "python",
+        "flask",
+        "sql",
+        "react",
+        "ts"
+      ]
+    },
+    {
+      "image": "img/caviarclub.jpg",
+      "alt": "Caviar waffle bites",
+      "meta": "Apr 2024 · Human-Computer Interaction course project",
+      "title": "Caviar Club",
+      "link": "https://github.com/matthewmammano/caviar-club",
+      "desc": "Restaurant and dish review app built with Node.js, MongoDB, and Handlebars.",
+      "tags": [
+        "node",
+        "mongodb",
+        "html/css"
+      ]
+    },
+    {
+      "image": "img/crowdsource.jpg",
+      "alt": "Crowdsourcing platform research screenshot",
+      "meta": "2021 · IEEE MIT URTC",
+      "title": "Crowdsourcing Platform Study",
+      "link": "https://ieeexplore.ieee.org/document/9701643",
+      "desc": "Published full-stack research prototyping the ideal components of crowdsourcing platforms for higher ed, presented at IEEE MIT URTC.",
+      "tags": [
+        "html/css",
+        "js",
+        "publication"
+      ]
+    },
+    {
+      "image": "img/toughluck.png",
+      "alt": "Tough Luck Township gameplay screenshot",
+      "meta": "2021 · NJ Governor's School of Engineering & Technology",
+      "title": "Tough Luck Township",
+      "link": "https://mattmammano.itch.io/tough-luck-township",
+      "desc": "High school Unity browser platformer game about jumping across storefronts, published free on itch.io.",
+      "tags": [
+        "c#",
+        "unity"
+      ]
+    },
+    {
+      "image": "img/vip.png",
+      "alt": "Virtual Interactive Planner screenshot",
+      "meta": "2019 · Congressional App Challenge winner",
+      "title": "Virtual Interactive Planner",
+      "desc": "Web-based task-scheduling app for students.",
+      "tags": [
+        "js",
+        "html/css",
+        "award-winning"
+      ]
+    },
+    {
+      "image": "img/redbank.jpg",
+      "alt": "Red Bank Orthodontics site screenshot",
+      "meta": "2020 · client work",
+      "title": "Red Bank Orthodontics",
+      "link": "https://redbankortho.com",
+      "desc": "Freelance client site with online booking and patient intake forms.",
+      "tags": [
+        "html/css",
+        "js"
+      ]
+    },
+    {
+      "image": "img/actiontime.png",
+      "alt": "ActionTime time-management app screenshot",
+      "meta": "2019 · Monmouth University Summer Research",
+      "title": "ActionTime",
+      "link": "https://www.monmouth.edu/school-of-science/documents/2019/08/2019-srp-abstract-book.pdf",
+      "desc": "Research time-management web app with calendar-based task prioritization via the Google Calendar API.",
+      "tags": [
+        "php",
+        "html/css",
+        "js"
+      ]
+    },
+    {
+      "image": "img/structure.png",
+      "alt": "Structure day-scheduling app screenshot",
+      "meta": "2020",
+      "title": "Structure",
+      "desc": "High school day-planning app that scores how closely your actual day matched your class schedule.",
+      "tags": [
+        "js",
+        "html/css"
+      ]
+    },
+    {
+      "image": "img/fishfeed.jpeg",
+      "alt": "Fish Feed Raspberry Pi project screenshot",
+      "meta": "2020",
+      "title": "Fish Feed",
+      "desc": "IoT: Raspberry Pi-controlled automatic feeder for a pet fish, with a companion website.",
+      "tags": [
+        "js",
+        "html/css",
+        "php",
+        "sql",
+        "raspberry-pi"
+      ]
+    },
+    {
+      "image": "img/otd.png",
+      "alt": "Open The Door screenshot",
+      "meta": "2019 · volunteer, Point Boro HS special needs program",
+      "title": "Open The Door",
+      "desc": "Volunteer sign-in/out tracker built for my high school's special-needs program, so staff could log students more easily.",
+      "tags": [
+        "html/css",
+        "js",
+        "php",
+        "sql"
+      ]
+    },
+    {
+      "image": "img/snjl.png",
+      "alt": "Special Needs Job Locator screenshot",
+      "meta": "2019 · volunteer, Point Boro HS special needs program",
+      "title": "Special Needs Job Locator",
+      "desc": "Volunteer local job board built for my high school's special-needs program, matching students to opportunities suited to their needs.",
+      "tags": [
+        "html/css",
+        "js",
+        "php",
+        "sql"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "M.S. Machine Learning",
+      "note": "with thesis",
+      "sub": "Stevens Institute of Technology",
+      "date": "2025 - 2026"
+    },
+    {
+      "name": "B.S. Computer Science",
+      "note": "with highest honors",
+      "sub": "Stevens Institute of Technology",
+      "date": "2022 - 2025"
+    }
+  ],
+  "contact": [
+    {
+      "label": "mattmammanoweb@gmail.com",
+      "href": "mailto:mattmammanoweb@gmail.com"
+    },
+    {
+      "label": "908-910-5439",
+      "href": "tel:9089105439"
+    },
+    {
+      "label": "mattmammano.com",
+      "href": "https://mattmammano.com"
+    }
+  ],
+  "footer": {
+    "right": "content updated Sep 25, 2026"
+  }
+}
