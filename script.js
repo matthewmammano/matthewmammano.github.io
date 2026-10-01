@@ -59,7 +59,7 @@ function renderProjects(projects) {
   return projects.map((p, i) => `
     <div class="card${i >= PROJECTS_VISIBLE_COUNT ? ' card-extra' : ''}" data-tags="${p.tags.join(' ')}">
       ${p.image
-      ? (p.link ? `<a class="card-img-link" href="${p.link}" target="_blank" rel="noopener"><img src="${p.image}" alt="${p.alt}"></a>` : `<img src="${p.image}" alt="${p.alt}">`)
+      ? (p.link ? `<a class="card-img-link" href="${p.link}" target="_blank" rel="noopener"><img src="${p.image}" alt="${p.alt}" loading="lazy" decoding="async"></a>` : `<img src="${p.image}" alt="${p.alt}" loading="lazy" decoding="async">`)
       : (p.link ? `<a class="card-noimg mono" href="${p.link}" target="_blank" rel="noopener">${p.title}</a>` : `<div class="card-noimg mono">${p.title}</div>`)}
       <div class="card-body">
         <div class="card-meta">${p.meta}</div>
