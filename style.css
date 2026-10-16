@@ -55,15 +55,16 @@ body::before {
 }
 
 /* photo spans the page right of the sidebar; the dark gradient tint (same color as --bg) fades
-   it out toward the text side without fully hiding it. Box is taller than the viewport (125vh)
-   so it always fully covers it; the extra 25vh hangs below at rest and the scroll listener in
-   script.js translates it up into view, so the visible area never runs out of image */
+   it out toward the text side without fully hiding it. Box is taller than the viewport (140vh)
+   so it always fully covers it; the extra 40vh hangs below at rest and the scroll listener in
+   script.js translates it up into view, reaching the full 40vh exactly at the true bottom of the
+   page (recomputed live, so it tracks the projects grid expanding/collapsing) */
 .bg-image {
   position: fixed;
   top: 0;
   left: 220px;
   right: 0;
-  height: 125vh;
+  height: 140vh;
   z-index: 0;
   pointer-events: none;
   display: none;

@@ -177,13 +177,14 @@ function addDescToggles() {
   });
 }
 
-function addProjectsToggle(totalCount) {
+function addProjectsToggle(totalCount, onToggle) {
   const button = document.getElementById('projectsToggle');
   if (!button) return;
   const grid = document.getElementById('projectsGrid');
   button.addEventListener('click', () => {
     const expanded = grid.classList.toggle('expanded');
     button.textContent = expanded ? 'Show less' : `Show all ${totalCount} projects`;
+    onToggle();
   });
 }
 
@@ -191,7 +192,6 @@ function wireUpBehavior() {
   addTagChips([...document.querySelectorAll('#experienceList .role-item')], '.role-group-title');
   addTagChips([...document.querySelectorAll('#projects .card')], 'h3');
   addDescToggles();
-  addProjectsToggle(document.querySelectorAll('#projects .card').length);
 
   const navLinks = [...document.querySelectorAll('.sidebar nav a')];
   const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
@@ -207,13 +207,17 @@ function wireUpBehavior() {
   }
 
   const bgImage = document.querySelector('.bg-image');
-  const bgShiftVh = 25;
+  const bgMaxShiftVh = 40; // total travel distance; must match the spare height on .bg-image in style.css
+
   let bgTicking = false;
 
   function updateBgShift() {
+    // recomputed from the live document height every call, so it always reaches
+    // exactly bgMaxShiftVh at the true bottom of the page - whether projects are
+    // expanded or collapsed - and never stalls early or runs out of image.
     const scrollRange = document.documentElement.scrollHeight - window.innerHeight;
     const progress = scrollRange > 0 ? Math.min(window.scrollY / scrollRange, 1) : 0;
-    bgImage.style.transform = `translateY(${progress * -bgShiftVh}vh)`;
+    bgImage.style.transform = `translateY(${-progress * bgMaxShiftVh}vh)`;
     updateActiveSection();
     bgTicking = false;
   }
@@ -224,6 +228,10 @@ function wireUpBehavior() {
       bgTicking = true;
     }
   }, { passive: true });
+
+  window.addEventListener('resize', updateBgShift);
+
+  addProjectsToggle(document.querySelectorAll('#projects .card').length, updateBgShift);
 
   updateBgShift();
 }
